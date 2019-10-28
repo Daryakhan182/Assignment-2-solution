@@ -1,0 +1,35 @@
+
+
+<ion-header  >
+  
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-menu-button></ion-menu-button>
+    </ion-buttons>
+    <ion-title>
+      Home
+    </ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <form [formGroup]="daryaForm">
+
+    <div>
+      <label > First Name</label>
+      <input type="text" formControlName="first" />
+    </div>
+
+    <div>
+      <label > last Name</label>
+      <input type="text" formControlName="last" />
+    </div>
+
+    <div>
+      <label > Email</label>
+      <input type="text" formControlName="email" />
+    </div>
+
+    <ion-button color="primary" (click)="submitform()" type="submit">Save</ion-button>
+  </form> 
+</ion-content>

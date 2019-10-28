@@ -1,0 +1,16 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>Movies list</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card *ngFor="let item of students">
+    <ion-item [routerLink]="['/portfolio', item.id]">
+      <ion-card-content>
+        <ion-label>{{ item?.name }} | {{ item?.id.substring(0,4) }}
+        </ion-label>
+      </ion-card-content>
+    </ion-item>
+  </ion-card>
+</ion-content>
